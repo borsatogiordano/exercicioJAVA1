@@ -93,4 +93,28 @@ public class Lista01 {
 		System.out.println("O consumo médio desta viagem foi de: " + (distanciaPercorrida/totalGastoCombustivel) + " km/L.");
 		scanner.close();
     }
+    public void ex7(){
+        double nota1;
+		double nota2;
+		double nota3;
+		double nota4;
+		double media;
+
+		System.out.println("Digite a primeira nota:");
+		nota1 = scanner.nextDouble();
+
+		System.out.println("Digite a segunda nota:");
+		nota2 = scanner.nextDouble();
+
+		System.out.println("Digite a terceira nota:");
+		nota3 = scanner.nextDouble();
+
+		System.out.println("Digite a quarta nota:");
+		nota4 = scanner.nextDouble();
+
+		media = (nota1 + nota2 + nota3 + nota4) / 4;
+
+		System.out.println("A média aritmética desse aluno é de: " + media);
+		scanner.close();
+    }
 }
