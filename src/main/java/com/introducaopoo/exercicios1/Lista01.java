@@ -49,4 +49,15 @@ public class Lista01 {
 
 		scanner.close();
     }
+    public void ex4(){
+        
+        int numeroDigitado;
+
+		System.out.println("Escreva um número e eu te direi o sucessor e o antecessor");
+		numeroDigitado = scanner.nextInt();
+
+		System.out.println("O número antecessor de " + numeroDigitado + " é: " + (numeroDigitado-1) + ", e o sucessor é: " + (numeroDigitado+1));
+
+		scanner.close();
+    }
 }
