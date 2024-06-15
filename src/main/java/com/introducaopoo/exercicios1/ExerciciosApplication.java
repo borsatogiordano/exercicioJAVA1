@@ -5,18 +5,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Scanner;
 
 @SpringBootApplication
-public class Exercicios2Application {
+public class ExerciciosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ExerciciosApplication.class, args);
 
-			Scanner scanner = new Scanner(System.in);
-			String nome;
-
-			System.out.println("Digite seu nome:");
-			nome = scanner.nextLine();
-
-			System.out.println("Olá, " + nome);
-			scanner.close();
-    }
+		Lista01 lista = new Lista01();
+		lista.ex1();
+	}
 }

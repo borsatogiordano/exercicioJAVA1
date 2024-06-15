@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercicios5Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Exercicios1Application.class, args);
+		SpringApplication.run(ExerciciosApplication.class, args);
 
 		Scanner scanner = new Scanner (System.in);
 		double largura;

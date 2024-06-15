@@ -1,16 +1,11 @@
 package com.introducaopoo.exercicios1;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.util.Scanner;
 
-@SpringBootApplication
-public class Exercicios1Application {
+public class Lista01 {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Exercicios1Application.class, args);
-
-			int numeroDigitado1;
+    public void ex1(){
+        int numeroDigitado1;
 			int numeroDigitado2;
 			int resultado;
 			Scanner scanner = new Scanner(System.in);
@@ -29,6 +24,5 @@ public class Exercicios1Application {
 			System.out.println("O resultado entre " + numeroDigitado1 + " e " + numeroDigitado2 + " é " + resultado);
 
 			scanner.close();
-	}
-
+    }
 }

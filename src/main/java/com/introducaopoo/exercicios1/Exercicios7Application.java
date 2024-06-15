@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercicios7Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Exercicios1Application.class, args);
+		SpringApplication.run(ExerciciosApplication.class, args);
 
 		//7) Escreva um programa que receba quatro notas de um aluno e calcule a média aritmética dessas notas.
 		

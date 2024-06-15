@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercicios8Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Exercicios1Application.class, args);
+		SpringApplication.run(ExerciciosApplication.class, args);
 
         //8) Suponha que voce trabalhe em um laboratório e seu
         //colega mediu a temperatura de um objeto em Fahrenheit.

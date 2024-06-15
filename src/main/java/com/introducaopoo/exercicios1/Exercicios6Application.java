@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercicios6Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Exercicios1Application.class, args);
+		SpringApplication.run(ExerciciosApplication.class, args);
 
 		//Construa um algoritmo que leia 
 		//1- a distância percorrida por um veículo em km 
