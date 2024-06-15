@@ -36,4 +36,17 @@ public class Lista01 {
 			System.out.println("Olá, " + nome);
 			scanner.close();
     }
+    public void ex3(){
+        double dinheiro;
+		double dinheiroConvertido;
+
+		System.out.println("Escreva um valor em R$ e eu converterei para dólar:");
+		dinheiro = scanner.nextDouble();
+
+		dinheiroConvertido = dinheiro / 5.252252;
+
+		System.out.println("O valor de: " + dinheiro + " R$ convertido em dólar é de: " + dinheiroConvertido + " $");
+
+		scanner.close();
+    }
 }
