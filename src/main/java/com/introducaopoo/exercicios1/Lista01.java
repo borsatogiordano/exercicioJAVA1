@@ -80,4 +80,17 @@ public class Lista01 {
 		System.out.println("O valor total do terreno é de:" +valorTotalM2);
 		scanner.close();
     }
+    public void ex6(){
+        double distanciaPercorrida;
+		double totalGastoCombustivel;
+
+		System.out.println("Escreva a distância que você percorreu:");
+		distanciaPercorrida = scanner.nextDouble();
+
+		System.out.println("Escreva o total de litros gastos em combustível");
+		totalGastoCombustivel = scanner.nextDouble();
+
+		System.out.println("O consumo médio desta viagem foi de: " + (distanciaPercorrida/totalGastoCombustivel) + " km/L.");
+		scanner.close();
+    }
 }
