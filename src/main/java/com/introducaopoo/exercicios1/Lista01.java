@@ -117,4 +117,16 @@ public class Lista01 {
 		System.out.println("A média aritmética desse aluno é de: " + media);
 		scanner.close();
     }
+    public void ex8(){
+        double fahrenheit;
+        double celsius;
+
+        System.out.println("Escreva a temperatura em Celsius que você deseja converter:");
+        fahrenheit = scanner.nextDouble();
+
+        celsius = (fahrenheit - 32) * 5 / 9;
+
+        System.out.println(fahrenheit + "°F convertida para Celsius é:" + celsius);
+        scanner.close();
+    }
 }
