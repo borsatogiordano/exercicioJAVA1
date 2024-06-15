@@ -50,7 +50,7 @@ public class Lista01 {
 		scanner.close();
     }
     public void ex4(){
-        
+
         int numeroDigitado;
 
 		System.out.println("Escreva um número e eu te direi o sucessor e o antecessor");
@@ -58,6 +58,26 @@ public class Lista01 {
 
 		System.out.println("O número antecessor de " + numeroDigitado + " é: " + (numeroDigitado-1) + ", e o sucessor é: " + (numeroDigitado+1));
 
+		scanner.close();
+    }
+    public void ex5(){
+        double largura;
+		double comprimento;
+		double valorM2 = 1739.26;
+		double metrosQuadrados;
+		double valorTotalM2;
+
+		System.out.println("Escreva a largura do terreno:");
+		largura = scanner.nextDouble();
+
+		System.out.println("Escreva o comprimento do terreno");
+		comprimento = scanner.nextDouble();
+
+		metrosQuadrados = largura * comprimento;
+
+		valorTotalM2 = metrosQuadrados * valorM2;
+
+		System.out.println("O valor total do terreno é de:" +valorTotalM2);
 		scanner.close();
     }
 }
