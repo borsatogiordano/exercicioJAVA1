@@ -159,4 +159,21 @@ public class Lista02 {
             }
         }
     }
+
+    public void ex7(){
+        int numeroDigitado1;
+        int numeroDigitado2;
+
+        System.out.println("Insira dois números e eu idetificarei se eles são divisíveis.\nInsira o primeiro número:");
+        numeroDigitado1 = scanner.nextInt();
+
+        System.out.println("Agora Insira o divisor:");
+        numeroDigitado2 = scanner.nextInt();
+
+        if (numeroDigitado1 % numeroDigitado2 == 0){
+            System.out.println(numeroDigitado1 + " é divisível por " + numeroDigitado2);
+        } else {
+            System.out.println(numeroDigitado1 + " não é divisível por " + numeroDigitado2);
+        }
+    }
 }
