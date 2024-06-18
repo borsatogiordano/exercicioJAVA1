@@ -47,7 +47,7 @@ public class Lista01 {
 		System.out.println("Escreva um valor em R$ e eu converterei para dólar:");
 		dinheiro = scanner.nextDouble();
 
-		dinheiroConvertido = dinheiro / 5.252252;
+		dinheiroConvertido = dinheiro / 5.25;
 
 		System.out.println("O valor de: " + dinheiro + " R$ convertido em dólar é de: " + dinheiroConvertido + " $");
 
