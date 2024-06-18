@@ -24,4 +24,25 @@ public class Lista02 {
         }
     }
 
+    public void ex2(){
+        int numeroDigitado1;
+        int numeroDigitado2;
+
+        System.out.println("Escreva dois números e eu direi qual deles é maior.\nInsira o primeiro número:");
+        numeroDigitado1 = scanner.nextInt();
+
+        System.out.println("Agora insira outro número:");
+        numeroDigitado2 = scanner.nextInt();
+
+        if (numeroDigitado1 > numeroDigitado2){
+            System.out.println(numeroDigitado1 + " é maior que " + numeroDigitado2);
+        } else if (numeroDigitado1 == numeroDigitado2){
+            System.out.println(numeroDigitado1 + " é igual a " + numeroDigitado2);
+        } else {
+            System.out.println(numeroDigitado1 + " é menor que " + numeroDigitado2);
+        }
+
+
+    }
+
 }

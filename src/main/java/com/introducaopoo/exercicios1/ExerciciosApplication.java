@@ -29,7 +29,7 @@ public class ExerciciosApplication {
 		Lista02 lista2 = new Lista02();
 
 		LimpaTerminal.limpa_windows();
-		lista2.ex1();
+		lista2.ex2();
 	}
 }
 
