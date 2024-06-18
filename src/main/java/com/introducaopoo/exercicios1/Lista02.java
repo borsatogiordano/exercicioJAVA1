@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Lista02 {
     
     Scanner scanner = new Scanner (System.in);
+
     public void ex1(){
 
 
@@ -82,5 +83,21 @@ public class Lista02 {
         }
         System.out.println("Você está na fila preferencial!");
         scanner.close();
+    }
+    
+    public void ex4(){
+        int idade;
+
+        System.out.println("Insira sua idade:");
+        idade = scanner.nextInt();
+
+        if (idade >= 18){
+            System.out.println("Você pode entrar!");
+        }
+        else if (idade <18 && idade >= 16){
+            System.out.println("Você só pode entrar acompanhado(a) por seus responsáveis.");
+        } else {
+            System.out.println("Você não pode entrar.");
+        }
     }
 }
