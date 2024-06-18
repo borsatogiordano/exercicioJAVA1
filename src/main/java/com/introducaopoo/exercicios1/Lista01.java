@@ -27,13 +27,17 @@ public class Lista01 {
     }
     public void ex2(){
         String nome;
+		String sobrenome;
 
             Scanner scanner = new Scanner (System.in);
         
 			System.out.println("Digite seu nome:");
 			nome = scanner.nextLine();
 
-			System.out.println("Olá, " + nome);
+			System.out.println("Digite seu sobrenome");
+			sobrenome = scanner.nextLine();
+
+			System.out.println("Olá, " + nome + " " + sobrenome);
 			scanner.close();
     }
     public void ex3(){
