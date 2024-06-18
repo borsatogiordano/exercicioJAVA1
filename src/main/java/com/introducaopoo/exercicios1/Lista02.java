@@ -126,4 +126,37 @@ public class Lista02 {
         }
         }
     }
+
+    public void ex6(){
+        double nota1;
+        double nota2;
+        double media;
+        double notaRec;
+        double maiorNota;
+
+        System.out.println("Insira a primeira nota:");
+        nota1 = scanner.nextDouble();
+
+        System.out.println("Insira a segunda nota:");
+        nota2 = scanner.nextDouble();
+
+        media = (nota1 + nota2) / 2;
+        if (media >= 6){
+            System.out.println("Você está aprovado!");
+        } else {
+            System.out.println("Recuperação\n Insira a nota de recuperação:");
+            notaRec = scanner.nextDouble();
+
+            if (nota1 > nota2){
+                maiorNota = nota1;
+            } else {
+                maiorNota = nota2;
+            }
+            if (((maiorNota + notaRec) / 2) >= 6){
+                System.out.println("Você está aprovado, mas por pouco!");
+            }else{
+                System.out.println("Você está reprovado!");
+            }
+        }
+    }
 }
