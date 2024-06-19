@@ -119,7 +119,7 @@ public class Lista02 {
                 System.out.println("Acesso Permitido!");
                 logado = true;
             }else {
-                System.out.println("Senha incorreta, tente novamente.\n\n\n\n");
+                System.out.println("Senha incorreta!\n");
             }
         } else {
             System.out.println("Login Invalido, tente novamente.\n\n\n");
@@ -207,6 +207,7 @@ public class Lista02 {
             } else if (acertos >= 3 && rounds == 5) {
                 System.out.println("Parabéns, você venceu com " + acertos + " acertos!");
                 break;
+
             }
         }  
     }
