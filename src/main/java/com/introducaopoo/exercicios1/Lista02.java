@@ -176,4 +176,75 @@ public class Lista02 {
             System.out.println(numeroDigitado1 + " não é divisível por " + numeroDigitado2);
         }
     }
+
+    public void ex8(){
+
+        int resposta1, resposta2, resposta3, resposta4, resposta5;
+        int erros = 0;
+        int acertos = 0;
+
+        System.out.println("Qual a capital do Brasil? \n 1 - São Paulo \n 2 - Rio de Janeiro \n 3 - Brasília \n 4 - Salvador");
+        resposta1 = scanner.nextInt();
+
+        if (resposta1 != 3){
+            erros++;
+        } else {
+            acertos++;
+        }
+
+        System.out.println("Qual o maior planeta do nosso sistema solar? \n 1 - Terra \n 2 - Júpiter \n 3 - Saturno \n 4 - Marte");
+        resposta2 = scanner.nextInt();
+
+        if (resposta2 != 2){
+            erros++;
+        } else {
+            acertos++;
+        }
+
+        System.out.println("Quem escreveu 'Dom Quixote'? \n 1 - William Shakespeare \n 2 - Miguel de Cervantes \n 3 - Gabriel Garcia Marquez \n 4 - José Saramago");
+        resposta3 = scanner.nextInt();
+
+        if (resposta3 != 2){
+            erros++;
+        } else {
+            acertos++;
+        }
+            
+        if (erros == 3){
+            System.out.println("Você perdeu, tente novamente.");
+            System.exit(0);
+        }
+
+        System.out.println("Qual é o elemento químico representado pelo símbolo 'O'? \n 1 - Ouro \n 2 - Prata \n 3 - Oxigênio \n 4 - Hidrogênio");
+        resposta4 = scanner.nextInt();
+
+        if (resposta4 != 3){
+            erros++;
+        } else {
+            acertos++;
+        }
+
+        if (erros == 3){
+            System.out.println("Você perdeu, tente novamente.");
+            System.exit(0);
+        }
+
+        System.out.println("Quantos estados tem o Brasil? \n 1 - 26 \n 2 - 25 \n 3 - 24 \n 4 - 27 ");
+        resposta5 = scanner.nextInt();
+
+        if (resposta5 != 4){
+            erros++;
+        } else {
+            acertos++;
+        }
+
+        if (erros == 3){
+            System.out.println("Você perdeu, tente novamente..\n");
+            System.exit(0);
+        }
+
+        System.out.println("Você venceu, e acertou " + acertos + " questões, Parabéns!");
+    }
+        
 }
+
