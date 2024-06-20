@@ -91,13 +91,13 @@ public class Lista03 {
                 System.out.println("Parabéns, você acertou!");
             }
 
-            else if (numeroAleatorio - numeroPalpite == 1){
+            else if (diferenca == 1){
                 System.out.println("Ta quente!!!");
             }
-            else if (numeroAleatorio - numeroPalpite <= 3){
+            else if (diferenca <= 3){
                 System.out.println("Ta morno!");
             }
-            else if (numeroAleatorio - numeroPalpite <= 10){
+            else if (diferenca <= 10){
                 System.out.println("Tá frio...");
             }
             else {
