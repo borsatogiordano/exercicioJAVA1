@@ -178,5 +178,20 @@ public class Lista03 {
         }
     }
 
-    
+    public void ex7(){
+
+        System.out.print("Digite a largura do retângulo: ");
+        int largura = scanner.nextInt();
+
+        System.out.print("Digite a altura do retângulo: ");
+        int altura = scanner.nextInt();
+
+        // Desenha o retângulo de asteriscos
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }
