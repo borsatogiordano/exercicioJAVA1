@@ -31,7 +31,7 @@ public class ExerciciosApplication {
 		Lista03 lista3 = new Lista03();
 
 		LimpaTerminal.limpa_windows();
-		lista3.ex2();
+		lista3.ex3();
 	}
 }
 
