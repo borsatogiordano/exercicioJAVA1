@@ -105,4 +105,53 @@ public class Lista03 {
             }
         }
     }
+
+    public void ex5(){
+        /*5) Crie um algoritmo que receba login e senha e verifique as credenciais. Caso
+        algum deles estiver errado o programa deve retornar ao usuário quais das
+        opções está errada, se é o login ou a senha. O programa deve bloquear o
+        acesso após 3 tentativas erradas. Quando for a última tentativa ele deve emitir
+        um alerta: "Última tentativa, mais um erro seu acesso será bloqueado!" */
+
+        String loginCheck = "Admin";
+        String tryLogin;
+        String passwordCheck = "1234";
+        String tryPassword;
+        boolean logado = false;
+        int tentativas = 3;
+
+        System.out.println("Insira suas credenciais com cautela, com 3 tentativas erradas iremos bloquear seu acesso!");
+        
+        while(!logado && tentativas >0){
+            System.out.println("Insira seu login:");
+            tryLogin = scanner.nextLine();
+
+            if (loginCheck.equals(tryLogin)){
+
+                System.out.println("Insira sua senha:");
+                tryPassword = scanner.nextLine();
+
+                if (passwordCheck.equals(tryPassword)){
+                    System.out.println("Bem-vindo!");
+                    logado = true;  
+                }
+                else {
+                    System.out.println("Senha incorreta\n\n");
+                    tentativas--;
+                }
+            }
+            else {
+                System.out.println("Login Incorreto\n\n");
+                tentativas--;
+            }
+
+            if (tentativas == 1){
+                System.out.println("Última tentativa!");
+            }  
+            if (tentativas == 0){
+                System.out.println("Acesso Bloqueado.");
+            }   
+        }
+    }
+
 }
