@@ -154,4 +154,29 @@ public class Lista03 {
         }
     }
 
+    public void ex6(){
+        /* Escreva um programa que seja capaz de desenhar uma pirâmide de
+        asteriscos. O usuário deverá informar quantos andares ele deseja que a
+        pirâmide tenha. */
+
+        System.out.print("Digite o número de andares da pirâmide: ");
+        int andares = scanner.nextInt();
+
+        // Desenha a pirâmide de asteriscos
+        for (int i = 1; i <= andares; i++) {
+
+            for (int j = 0; j < andares - i; j++) {
+                System.out.print(" ");
+            }
+
+            for (int k = 0; k < (2 * i - 1); k++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+
+        }
+    }
+
+    
 }
