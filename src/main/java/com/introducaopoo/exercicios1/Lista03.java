@@ -1,5 +1,7 @@
 package com.introducaopoo.exercicios1;
 import java.util.Scanner;
+import java.util.Random;
+
 public class Lista03 {
 
     Scanner scanner = new Scanner(System.in);
@@ -65,8 +67,42 @@ public class Lista03 {
         } else {
             System.out.println("Os números são iguais.");
         }
+    }
 
+    public void ex4(){
+        /*Jogo da adivinhação. Peça para alguém escolher um número. Depois peça
+        para outra pessoa tentar adivinhar. O programa deverá retornar dicas como:
+        "Muito baixo, muito alto ou quase lá" ou "tá quente, tá frio". */
 
+        Random random = new Random();
 
+        int numeroAleatorio = random.nextInt(10);
+        int numeroPalpite;
+        boolean acertou = false;
+        int diferenca;
+
+        while (!acertou){
+            System.out.println("Advinhe o número que estou pensando de 1 a 10: ");
+            numeroPalpite = scanner.nextInt();
+
+            diferenca = Math.abs(numeroAleatorio - numeroPalpite);
+
+            if (numeroAleatorio == numeroPalpite){
+                System.out.println("Parabéns, você acertou!");
+            }
+
+            else if (numeroAleatorio - numeroPalpite == 1){
+                System.out.println("Ta quente!!!");
+            }
+            else if (numeroAleatorio - numeroPalpite <= 3){
+                System.out.println("Ta morno!");
+            }
+            else if (numeroAleatorio - numeroPalpite <= 10){
+                System.out.println("Tá frio...");
+            }
+            else {
+                System.out.println("O número secreto está entre 1 e 10.");
+            }
+        }
     }
 }
