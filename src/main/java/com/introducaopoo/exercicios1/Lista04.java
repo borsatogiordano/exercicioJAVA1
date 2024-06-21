@@ -29,6 +29,24 @@ public class Lista04 {
          * identifique a compra de menor valor e a compra de maior valor
          */
 
+        double vendas[] = { 20.50, 100.50, 15.50, 10.50 };
+        double menorVenda = vendas[0];
+        double maiorVenda = vendas[0];
+
+        for (double i : vendas) {
+            if (i < menorVenda) {
+                menorVenda = i;
+            }
+        }
+
+        for (double x : vendas) {
+            if (x > maiorVenda) {
+                maiorVenda = x;
+            }
+        }
+
+        System.out.println("A menor venda foi: " + menorVenda);
+        System.out.println("e a maior venda foi: " + maiorVenda);
 
     }
 }
