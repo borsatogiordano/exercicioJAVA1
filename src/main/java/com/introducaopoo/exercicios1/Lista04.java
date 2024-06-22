@@ -68,4 +68,20 @@ public class Lista04 {
 
         System.out.println("O ticket médio foi de: " + ticketMedio);
     }
+
+    void ex4() {
+        /*
+         * Escreva um código que irá percorrer uma lista de números inteiros
+         * lista[ ] = { 3, 5, 6, 7, 8, 10, 22, 55, 110 } e irá contar a quantidade de
+         * números pares presente nela.
+         */
+
+        int lista[] = { 3, 5, 6, 7, 8, 10, 22, 55, 110 };
+
+        for (int i : lista) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
