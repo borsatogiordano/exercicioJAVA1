@@ -49,4 +49,23 @@ public class Lista04 {
         System.out.println("e a maior venda foi: " + maiorVenda);
 
     }
+
+    void ex3() {
+        /*
+         * Ainda utilizando o exercício do mercado, calcule o ticket médio de
+         * vendas do dia
+         */
+
+        double vendas[] = { 20.50, 100.50, 15.50, 10.50 };
+        double fechamento = 0;
+        double ticketMedio;
+
+        for (double i : vendas) {
+            fechamento += i;
+        }
+
+        ticketMedio = fechamento / vendas.length;
+
+        System.out.println("O ticket médio foi de: " + ticketMedio);
+    }
 }
