@@ -33,7 +33,7 @@ public class ExerciciosApplication {
 		Lista04 lista4 = new Lista04();
 
 		LimpaTerminal.limpa_windows();
-		lista4.ex7();
+		lista4.ex8();
 	}
 }
 
